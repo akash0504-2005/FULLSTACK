@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3A_sample</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            /*color: #007BFF; */
+        }
+        header{
+            height: 20vh;
+            width: 100%;
+            background-color: #f1c189;
+            color: rgb(8, 8, 8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+        }
+        nav{
+            background-color: rgba(58, 148, 113, 0.315);
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-size: 20px;
+        }
+        nav a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.74);
+        }
+        main{
+            margin: 30px;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            font-size: 20px;
+        }
+        h2,h3,p{
+            margin: 10px;
+        }
+        section{
+            background-color: rgba(179, 53, 53, 0.192);
+            width: 75%;
+            height: 100%;
+            box-shadow: 0 0 5px rgba(114, 75, 75, 0.25);
+            padding: 10px;
+        }
+        figure{
+            display: grid;
+            justify-content: center;
+            padding: 20px;
+        }
+        figcaption{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        img{
+            height: 400px;
+            width: 500px;
+        }
+        aside{
+            background-color: rgba(223, 203, 26, 0.315);
+            width: 45%;
+            height: 100%;
+            box-shadow: 0 0 5px rgba(0,0,0,0.25);
+            padding: 10px;
+        }
+        footer{
+            height: 10vh;
+            background-color: rgba(0, 0, 0, 0.842);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HUSK HYDRA-H</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">contact</a>
+    </nav>
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>Welcome to our new project model made by our teammates.It is responsible to consume biodegrable water bottles to reduce plastic waste.</p>
+            <figure>
+                <img src="data:image/jpeg;base64,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" alt="image">
+                <figcaption>Our team at work</figcaption>
+            </figure>
+        </section>
+        <aside>
+            <h3>Latest News</h3>
+            <p>Check out our latest updates in the website</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
